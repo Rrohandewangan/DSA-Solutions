@@ -1,5 +1,6 @@
 ﻿# DSA-Solutions
 # Check My All Topic wise clean and well explained solutions
-# Brute force apporoach 
+# Brute force approach 
 # better approach 
 # opitmal approach
+
