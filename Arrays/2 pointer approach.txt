@@ -1,0 +1,6 @@
+2 pointer approach for array questions
+1. create left , right pointer
+2. identify how pointer decrease or increase .
+3. use loop while(left < right) 
+4. then what work do inside the loop
+5. return answer 
