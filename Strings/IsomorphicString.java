@@ -1,4 +1,4 @@
-public class IsomorphicStirng {
+public class IsomorphicString {
     
 //   public static boolean isIsomorphic(String s, String t) {
 //      if(s.length() != t.length()) { // both string length is not equal are not isomorphic
