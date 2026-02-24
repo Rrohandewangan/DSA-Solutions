@@ -1,1 +1,1 @@
-strs
+word.reverse() ;
