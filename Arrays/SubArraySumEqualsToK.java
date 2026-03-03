@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class SubArraySumEqualsToK {
    
 // Time Complexity -> O(n3) // brute force approach
@@ -35,20 +37,38 @@ public class SubArraySumEqualsToK {
 
 // }
 
- public static int subarraySum(int[] nums, int k) {
-    int n = nums.length ;
-    int count = 0;
-    int i = 0; 
-    int currSum = 0 ;
+// Optimal approach -> 
+    // TC -> O(n)
+    // SC -> O(n)
+   //  public int subarraySum(int[] nums, int k) {
+   //      int n = nums.length ;
+   //      int count = 0 ;
+   //      int prefixSum = 0 ; // to store prefixSum till ith index
 
-  
- }
+   //      HashMap<Integer, Integer> map = new HashMap<>() ; // to store prefixsum and freq 
+   //      map.put(0, 1) ;// very important base case 
+
+   //      for(int i=0; i<n; i++) {
+   //          prefixSum += nums[i] ;
+
+   //          int remove = prefixSum - k ;
+
+   //          if(map.containsKey(remove)) {
+   //              count += map.get(remove) ;
+   //          }
+            
+   //          // Update the frequency of the current prefix sum
+   //          map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1) ;
+   //      }
+
+   //      return count ;
+   //  }
 
 
-    public static void main(String[] args) {
-        int[] nums = {1,2,3} ;
-        int k = 3 ;
-        System.out.println(subarraySum(nums, 2));
+   public static void main(String[] args) {
+      int[] nums = {1,2,3} ;
+      int k = 3 ;
+      System.out.println(subarraySum(nums, 2));
 
-     }
+   }
 }
