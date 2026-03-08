@@ -1,6 +1,7 @@
+package Problems;
 //https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
 
-public class numberOfSteps {
+public class NumberOfSteps {
     
     // TC -> O(logn)
     // SC -> O(digit in num)

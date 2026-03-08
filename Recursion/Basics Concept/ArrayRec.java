@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class ArrayRec {
 
     // Que1 -> check the array is sorted or not 
@@ -70,7 +68,6 @@ public class ArrayRec {
     //     return findAllIndex(arr, target, index + 1, ans);
     // }
     public static void main(String[] args) {
-        int[] arr = {2, 3, 5, 6, 7, 8, 8, 9, 1} ;
         
         // ArrayList<Integer> list = findAllIndex(arr, 8, 0, new ArrayList<>());
         // System.out.println(list);

@@ -1,3 +1,4 @@
+package Problems;
 public class RBS {
 
     // TC -> O(log2(n))

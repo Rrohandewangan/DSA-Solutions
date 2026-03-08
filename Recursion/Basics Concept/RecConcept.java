@@ -103,7 +103,7 @@ public class RecConcept {
     // }
 
     // static int reverse2(int n) {
-    //     // sometimes you migth need some additional variables in the argument 
+    //     // sometimes you might need some additional variables in the argument 
     //     // in that case, make another function
     //     int digits = (int)(Math.log10(n) + 1) ;
     //     return helper(n, digits) ;
