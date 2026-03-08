@@ -93,7 +93,6 @@ public class countOccurrencesInSortedArray {
 
     // find last occurrence of target in array
     public static int lastIndex(int[] arr, int target, int N) {
-      int n = arr.length ;
       int st = 0, end = N - 1 ;
       int ans = -1 ;
 

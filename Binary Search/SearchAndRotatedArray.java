@@ -1,15 +1,15 @@
 public class SearchAndRotatedArray {
   
   // TC -> O(n)
-  // public static int findIndex(int[] nums, int target) {
-  //   int n = nums.length ;
-  //     for(int i=0; i<n; i++) {
-  //       if(nums[i] == target) {
-  //           return i ;
-  //       }
-  //     }
-  //     return -1 ;
-  // }
+  public static int findIndex(int[] nums, int target) {
+    int n = nums.length ;
+      for(int i=0; i<n; i++) {
+        if(nums[i] == target) {
+            return i ;
+        }
+      }
+      return -1 ;
+  }
 
   // TC -> (logn) // find index with no duplicates
   // public static int findIndex(int[] nums, int target) {

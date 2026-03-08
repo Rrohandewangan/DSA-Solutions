@@ -26,7 +26,6 @@ public class romantoint {
     }
     public static void main(String[] args) {
        String s = "MCMXCIV" ;
-       HashSet<Integer> set = new HashSet<>() ;
        int ans = romanToInt(s) ;
        System.out.println(ans);
     } 

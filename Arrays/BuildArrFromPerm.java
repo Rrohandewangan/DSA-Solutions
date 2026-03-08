@@ -3,16 +3,16 @@ public class BuildArrFromPerm {
     // brute force -> 
      // TC -> O(n)
      // SC -> O(n)
-     public static int[] buildArray(int[] nums) {
-        int n = nums.length ;
-        int[] ans = new int[n] ;
+    //  public static int[] buildArray(int[] nums) {
+    //     int n = nums.length ;
+    //     int[] ans = new int[n] ;
 
-        for(int i=0; i<n; i++) {
-            ans[i] = nums[nums[i]] ;
-        }
+    //     for(int i=0; i<n; i++) {
+    //         ans[i] = nums[nums[i]] ;
+    //     }
 
-        return ans ;
-    }
+    //     return ans ;
+    // }
 
     // optimal approach ->
     // TC -> O(n)

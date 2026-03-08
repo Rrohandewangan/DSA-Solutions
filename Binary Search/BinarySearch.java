@@ -60,10 +60,6 @@ public class BinarySearch {
     }
     public static void main(String[] args) {
         
-        int arr1[] = {-1, 0, 3, 4, 5, 9, 12} ; // odd
-        int tar1 = 12  ;
-
-
         int arr2[] = { 0, 3, 5, 9, 12, 1} ; // even 
         int tar2 = 9 ;
        System.out.println(search(arr2, tar2));

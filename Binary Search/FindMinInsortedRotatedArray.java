@@ -1,4 +1,3 @@
-import java.util.Scanner ;
 public class FindMinInsortedRotatedArray {
     
   public static int findMin(int[] nums) {

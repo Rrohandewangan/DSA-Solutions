@@ -33,6 +33,6 @@ public class FindMissingAndRepeatingVal {
     }
     
     public static void main(String[] args) {
-        int[][] grid  = {{1, 3},{2,2}} ;
+
     }
 }

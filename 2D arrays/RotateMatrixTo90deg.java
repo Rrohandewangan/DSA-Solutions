@@ -3,7 +3,7 @@ public class RotateMatrixTo90deg {
       // brute force ->
     // Tc -> O(n2)
     // Sc -> O(n2)
-    public void rotate(int[][] mat) {
+    public void rotate1(int[][] mat) {
         int n = mat.length ;
 
         int[][] ans = new int[n][n] ; // ans 2d array to store answer after rotation
@@ -58,7 +58,6 @@ public class RotateMatrixTo90deg {
         }
     }
     public static void main(String[] args) {
-    int[][] matrix = {{5,1,9,11},{2,4,8,10},{13,3,6,7},{15,14,12,16}}  ;
 
     
     }

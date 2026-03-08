@@ -1,7 +1,6 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class pairSum {
+public class PairSum {
      // time complexity ->  O(n)
     // public static  void pairSum(int[] arr, int target) {
     //     ArrayList list = new ArrayList<>() ;

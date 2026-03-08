@@ -5,18 +5,18 @@ public class Twosum {
   // brute force approach -> 
   // TC -> O(n2)
   // SC -> O(1)
-  // public static int[] twoSum(int[] nums, int target) {
+  public static int[] twoSum(int[] nums, int target) {
     
-  //   for(int i=0; i<nums.length-1; i++) {
-  //     for(int j=i+1; j<nums.length; j++) {
-  //       if(nums[i] + nums[j] == target) {
-  //         return new int[]{i, j} ;
-  //       } 
+    for(int i=0; i<nums.length-1; i++) {
+      for(int j=i+1; j<nums.length; j++) {
+        if(nums[i] + nums[j] == target) {
+          return new int[]{i, j} ;
+        } 
         
-  //     }
-  //   }
-  //    return new int[]{} ;
-  // }
+      }
+    }
+     return new int[]{} ;
+  }
 
 
   // better approach -> using sorting and store element of array with its real index in other data structure.
@@ -28,7 +28,8 @@ public class Twosum {
 
   // optimal solution -> using hashmap
   // TC -> O(n)
-  // SC -> O(n)
+  // SC -> O(n) but it can consider O(1)
+  
   // public int[] twoSum(int[] nums, int target) {
   //        HashMap<Integer, Integer> map = new HashMap<>() ;
 
@@ -57,6 +58,7 @@ public class Twosum {
      for(int t=0; t<ans.length; t++) {
       System.out.print(ans[t]+" ");
      }
+     sc.close() ;
    } 
 }
        

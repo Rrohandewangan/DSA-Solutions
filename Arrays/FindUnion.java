@@ -1,7 +1,7 @@
 import java.util.* ;
 public class FindUnion {
 
-public static ArrayList<Integer> FindUnion(int arr1[], int arr2[], int n, int m) {
+public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m) {
 
   // to store union of both array
   ArrayList<Integer> union = new ArrayList<>() ;
@@ -56,12 +56,11 @@ return union ;
 }
   
     public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in) ;
        int arr1[] = {1,2,3,4,5}; 
        int n = arr1.length ;
        int arr2[] = {2,3,4,4,5} ;
        int m = arr2.length ;
 
-      System.out.println(FindUnion(arr1, arr2, n, m));
+      System.out.println(findUnion(arr1, arr2, n, m));
     }
 }

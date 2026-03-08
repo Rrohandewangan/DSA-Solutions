@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class RightShiftByD {
 
     // public static void rotateArray(int[] nums, int k) {

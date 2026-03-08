@@ -185,7 +185,6 @@
 
     public static int BinarySearch(int[] nums, int target, int start, int end) {
 
-        int n = nums.length ;
        
         while(start <= end) {
             int mid = start + (end - start)/2 ;

@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/missing-number/description/
 
-public class missingNumber {
+public class MissingNumber {
     
     // // Brute force apparoach // run loop on each element
     // // TC -> o(n2)

@@ -23,7 +23,7 @@ public class SearchIn2DMatrix {
         // TC -> O(log(m * n))
         // SC -> O(1)
     public static  boolean searchInRow(int[][] mat, int target, int row) { // O(logn)
-         int m = mat.length, n = mat[0].length ;
+         int n = mat[0].length ;
          int st = 0, end = n-1 ;
 
          while(st <= end) {

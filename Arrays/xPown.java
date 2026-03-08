@@ -7,7 +7,7 @@
 // 4. if power(n) is negetive then do x -> 1/x .
 
 
-public class xPown {
+public class XPown {
 
     // binary exponentition // 
     // time complexity -> O(logn)

@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-public class majorityElement {
+public class MajorityElement {
     // Time Complexity -> O(n2) 
 //    public static int majorityElement(int[] nums) {   
 //      int n = nums.length ;
@@ -42,21 +40,21 @@ public class majorityElement {
      
     ////// moore's voting alogorithm//////// ->  according to algo majority element in array always keep freq > 0 .
     // Time Complexity -> O(n) 
-    // public static int majorityElement(int nums[]) {
-    //     int n = nums.length ;
-    //      int freq = 0 , ans = 0 ;
-    //      for(int i=0; i<n; i++) {
-    //         if(freq == 0) {
-    //             ans = nums[i] ;
-    //         }
-    //         if(ans == nums[i]) {
-    //             freq++ ;
-    //         } else {
-    //             freq-- ;
-    //         }
-    //      }
-    //      return ans ;
-    // }
+    public static int majorityElement(int nums[]) {
+        int n = nums.length ;
+         int freq = 0 , ans = 0 ;
+         for(int i=0; i<n; i++) {
+            if(freq == 0) {
+                ans = nums[i] ;
+            }
+            if(ans == nums[i]) {
+                freq++ ;
+            } else {
+                freq-- ;
+            }
+         }
+         return ans ;
+    }
     public static void main(String[] args) {
           int nums[] = {3, 2, 3} ;
           System.out.println(majorityElement(nums));

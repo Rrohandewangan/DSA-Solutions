@@ -1,4 +1,3 @@
-import java.util.* ;
 public class UpperAndLowerBound {
  
  // Time Complexity -> O(n)
@@ -20,32 +19,32 @@ public class UpperAndLowerBound {
 //  }
 
 // Time Complexity -> O(logn)
-// public static int upperBound(int[] arr, int N, int x) {
-//   int st = 0, end = N-1, ans = -1;
-//   while(st <= end) {
-//     int mid = st+(end-st) / 2 ;
-//     if(arr[mid] > x ) {
-//       ans = mid ;
-//       end = mid-1 ;
-//     } else {
-//      st = mid+1 ;
-//     }
-//   }
-//   return ans ;
-// }
-// public static int lowerBound(int[] arr, int N, int x) {
-//   int st = 0, end = N-1, ans = -1;
-//   while(st <= end) {
-//     int mid = st+(end-st) / 2 ;
-//     if(arr[mid] >= x ) {
-//       ans = mid ;
-//       end = mid-1 ;
-//     } else {
-//      st = mid+1 ;
-//     }
-//   }
-//   return ans ;
-// }
+public static int upperBound(int[] arr, int N, int x) {
+  int st = 0, end = N-1, ans = -1;
+  while(st <= end) {
+    int mid = st+(end-st) / 2 ;
+    if(arr[mid] > x ) {
+      ans = mid ;
+      end = mid-1 ;
+    } else {
+     st = mid+1 ;
+    }
+  }
+  return ans ;
+}
+public static int lowerBound(int[] arr, int N, int x) {
+  int st = 0, end = N-1, ans = -1;
+  while(st <= end) {
+    int mid = st+(end-st) / 2 ;
+    if(arr[mid] >= x ) {
+      ans = mid ;
+      end = mid-1 ;
+    } else {
+     st = mid+1 ;
+    }
+  }
+  return ans ;
+}
     public static void main(String[] args) {
       int N = 5 ;
       int arr[] = {3,5,8,15,19} ;

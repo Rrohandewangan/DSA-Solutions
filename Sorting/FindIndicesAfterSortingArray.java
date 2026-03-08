@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.* ;
 
 public class FindIndicesAfterSortingArray {
 
@@ -8,7 +7,6 @@ public class FindIndicesAfterSortingArray {
     // SC -> O(1)
 
     public static List<Integer> targetIndices(int[] nums, int target) {
-          int n = nums.length ;
           int less = 0, tCount = 0 ;
 
           for(int val : nums) {

@@ -1,4 +1,4 @@
-public class removeOccurrences {
+public class RemoveOccurrences {
   
     // TC -> O(n * m) 
     // SC -> O(n)

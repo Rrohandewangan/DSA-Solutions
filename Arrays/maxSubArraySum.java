@@ -1,4 +1,4 @@
-public class maxSubArraySum {
+public class MaxSubArraySum {
 
     // code for print all subArray of array 
     // Time Complexity -> O(n3) ;
@@ -72,7 +72,6 @@ public class maxSubArraySum {
 
 
     static int maxSubArraySum(int[] arr) {
-        int n = arr.length ;
         int maxSum = Integer.MIN_VALUE ;
         int currSum = 0 ;
         for(int val : arr) {

@@ -1,4 +1,3 @@
-import java.util.* ;
 public class leftShiftBy1{
    
 // public static void leftShiftBy1(int[] arr, int n) {
@@ -15,6 +14,8 @@ public class leftShiftBy1{
 //   }
 // }
 
+// TC -> O(2n)
+// SC -> O(n)
 public static void leftShiftByk(int[] arr, int n, int k ) {
  
     k = k % n ;
