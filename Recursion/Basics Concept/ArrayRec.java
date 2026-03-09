@@ -67,6 +67,8 @@ public class ArrayRec {
     //     } 
     //     return findAllIndex(arr, target, index + 1, ans);
     // }
+
+    
     public static void main(String[] args) {
         
         // ArrayList<Integer> list = findAllIndex(arr, 8, 0, new ArrayList<>());
