@@ -8,7 +8,7 @@ public class ReverseNumber {
             int digit = n % 10 ;
             
             if(revNum > (Integer.MAX_VALUE / 10) || revNum < (Integer.MIN_VALUE / 10)) {
-              return 0 ;
+                return 0 ;
             }
             revNum = (revNum * 10) + digit ;
             n = n / 10 ;
