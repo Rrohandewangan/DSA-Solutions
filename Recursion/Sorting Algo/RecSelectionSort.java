@@ -20,7 +20,7 @@ public class RecSelectionSort {
     //         arr[r - 1] = arr[maxIdx] ;
     //         arr[maxIdx] = temp ;
 
-    //         selection(arr, r - 1, 0,0);
+    //         selection(arr, r - 1, 0, 0);
 
     //     }
 
