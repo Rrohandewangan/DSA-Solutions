@@ -36,7 +36,7 @@ public class SpiralMatrix {
             }
 
             //left
-            for(int i=eRow-1; i>=sRow+1; i--) {
+            for(int i=eRow-1; i>sRow; i--) {
                 if(sCol == eCol) {
                     break ;
                 } 
