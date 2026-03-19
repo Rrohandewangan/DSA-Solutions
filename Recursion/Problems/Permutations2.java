@@ -28,12 +28,14 @@ public class Permutations2 {
             nums[i] = temp ;
          }
     }
-    public List<List<Integer>> permute(int[] nums) {
+    public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>() ;
         getPerms(nums, 0, ans) ;
         return ans ;
     }
     public static void main(String[] args) {
-        
+        int[] nums = {1, 2, 3} ;
+        List<List<Integer>> list = permute(nums) ;
+        System.out.println(list);
     }
 }
