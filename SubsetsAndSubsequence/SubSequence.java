@@ -1,4 +1,4 @@
-package Problems;
+package Problems.SubsetsAndSubsequence;
 
 import java.util.ArrayList;
 
@@ -54,7 +54,7 @@ public class SubSequence {
         
     // }
 
-     static ArrayList<String> subSeqAscii(String p, String up) {
+    static ArrayList<String> subSeqAscii(String p, String up) {
         if(up.isEmpty()) {
             ArrayList<String> list = new ArrayList<>() ;
             list.add(p) ;
