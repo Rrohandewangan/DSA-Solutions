@@ -2,5 +2,10 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
         "geekonacci"
+    ],
+    "java.project.sourcePaths": [
+        "Recursion/Problems",
+        "Recursion/Basics Concept",
+        "Recursion/Sorting Algo"
     ]
 }

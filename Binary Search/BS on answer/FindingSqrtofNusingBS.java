@@ -1,6 +1,7 @@
 public class FindingSqrtofNusingBS {
     
     // TC -> O(n)
+    // SC -> O(1)
     // public static int findingSqrtOfn(int n) {
     //      int ans = -1 ;
     //     for(long i=1; i<=n; i++) {
