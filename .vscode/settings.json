@@ -4,8 +4,9 @@
         "geekonacci"
     ],
     "java.project.sourcePaths": [
+        "Recursion/Sorting Algo",
         "Recursion/Problems",
         "Recursion/Basics Concept",
-        "Recursion/Sorting Algo"
+        "LinkedList"
     ]
 }
