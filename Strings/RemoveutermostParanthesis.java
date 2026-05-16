@@ -16,7 +16,7 @@ public class RemoveutermostParanthesis {
             } else {
                 cnt-- ;
                 if(cnt > 0) {
-                  sb.append(ch) ;
+                    sb.append(ch) ;
                 }
             }
         }
