@@ -14,63 +14,58 @@ class Node {
         right = null;
     }
 }
-
-// TC -> O(n)
-// SC -> O(n)
 // Recursive Approach ->
 // class Solution {
         
-//     public static void preorder(Node root, List<Integer> arr) {
+//     public static void inorder(Node root, List<Integer> arr) {
 //         if(root == null) {
 //             return;
 //         }
 
+//         inorder(root.left, arr);
 //         arr.add(root.data);
-//         preorder(root.left, arr);
-//         preorder(root.right, arr);
+//         inorder(root.right, arr);
 
 //     }
 
-//     public List<Integer> preOrder(Node root) {
+//     public List<Integer> inOrder(Node root) {
             
 //         List<Integer> arr = new ArrayList<>();
 
-//         preorder(root, arr);
+//         inorder(root, arr);
 
 //         return arr;
 //     }
 // }
 
-
 // Iterative Approach ->
-
 class Solution {
-
-    public static List<Integer> preOrder(Node root) {
+    public List<Integer> inOrder(Node root) {
         List<Integer> list = new ArrayList<>();
-        if(root == null) {
-            return list;
-        }
-
         Stack<Node> st = new Stack<>();
-        st.push(root);
-        while(!st.isEmpty()) {
-            root = st.pop();
-            list.add(root.data);
-
-            if(root.right != null) {
-                st.push(root.right);
+        Node node = root;
+        while(true) {
+            if(node != null) {
+                st.push(node);
+                node = node.left;
             }
-
-            if(root.left != null) {
-                st.push(root.left);
+            else {
+                if(st.isEmpty()) {
+                    break;
+                }
+                else {
+                    node = st.pop();
+                    list.add(node.data);
+                    node = node.right;
+                }
             }
         }
-
         return list;
+
     }
 }
-public class PreOrderTrav {
+public class InorderTrav {
+    
     public static void main(String[] args) {
         
         Node root = new Node(1);
@@ -80,9 +75,9 @@ public class PreOrderTrav {
         root.left.right = new Node(5);
 
         Solution sol = new Solution();
-        List<Integer> result = sol.preOrder(root);
+        List<Integer> result = sol.inOrder(root);
 
-        System.out.println("Preorder Traversal :");
+        System.out.println("inorder Traversal :");
 
         for(int val : result) {
             System.out.print(val + " ");

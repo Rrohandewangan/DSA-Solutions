@@ -1,0 +1,27 @@
+public class LCAofBT {
+
+    // TC -> O(n)
+    // SC -> O(h)
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null || root == p || root == q) {
+            return root;
+        }
+
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        if(left == null) {
+            return right;
+        }
+        else if(right == null) {
+            return left;
+        }
+        else {
+            return root; // if both left and right is not null means we found the result
+        }
+    }
+    
+    public static void main(String[] args) {
+        
+    }
+}

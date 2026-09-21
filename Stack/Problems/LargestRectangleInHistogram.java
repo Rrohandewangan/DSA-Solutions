@@ -78,6 +78,7 @@ public class LargestRectangleInHistogram {
         
         return ans;
     }
+    
     public static void main(String[] args) {
         
     }
