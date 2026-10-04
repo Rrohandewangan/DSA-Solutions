@@ -20,7 +20,7 @@ public class Main {
 
 
         Student one = new Student();
-        Student two = one;
+        Student two = one; 
 
         one.name = "Something Something";
 
@@ -46,5 +46,7 @@ public class Main {
             this.marks = 90;
 
         }
+
+        // when you access, modify, create, call dont do it by reference variable do it by class name.
 
     }
